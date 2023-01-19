@@ -7,7 +7,7 @@ const Especialidades = () => {
     useEffect(() => {
         fetch('http://localhost:3005/especialidades/api').then(response => response.json()).then(datos => {
             console.log(datos)
-            setData(datos)
+            setData(datos.data)
         });
     }
     , []);
@@ -16,7 +16,7 @@ const Especialidades = () => {
 
         <div className="ventana">
             <h3>Cantidad de especialidades ofrecidas</h3>
-            <p>{data.length}</p>
+            <p>{data.total}</p>
         </div>
     );
 
