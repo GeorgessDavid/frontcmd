@@ -1,18 +1,22 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
-let turnos = []
-fetch('http://localhost:3005/turnos/api/listar').then(response => response.json()).then(datos => {
-    console.log(datos)
-    for (let i = 0; i < datos.length; i++) {
-        turnos.push(datos[i])
-    }
-});
+const Turnos = () => {
 
-function Turnos() {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+            fetch('http://localhost:3005/turnos/api/listar').then(response => response.json()).then(datos => {
+                console.log(datos)
+                setData(datos)
+            });
+        }
+        , []);
+
     return (
+
         <div className="ventana">
             <h3>Cantidad de Turnos tomados</h3>
-            <p>{turnos.length}</p>
+            <p>{data.length}</p>
         </div>
     );
 

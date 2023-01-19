@@ -1,18 +1,22 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
-let especialidades = []
-fetch('http://localhost:3005/especialidades/api').then(response => response.json()).then(datos => {
-    console.log(datos)
-    for (let i = 0; i < datos.length; i++) {
-        especialidades.push(datos[i])
+const Especialidades = () => {
+
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:3005/especialidades/api').then(response => response.json()).then(datos => {
+            console.log(datos)
+            setData(datos)
+        });
     }
-});
+    , []);
 
-function Especialidades() {
     return (
+
         <div className="ventana">
             <h3>Cantidad de especialidades ofrecidas</h3>
-            <p>{especialidades.length}</p>
+            <p>{data.length}</p>
         </div>
     );
 
