@@ -5,7 +5,7 @@ const Especialidades = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3005/especialidades/api').then(response => response.json()).then(datos => {
+        fetch('https://dh-grupo3.onrender.com/especialidades/api').then(response => response.json()).then(datos => {
             console.log(datos)
             setData(datos.data)
         });

@@ -5,7 +5,7 @@ const Prestadores = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3005/apiUsuarios/profesionales').then(response => response.json()).then(datos => {
+        fetch('https://dh-grupo3.onrender.com/apiUsuarios/profesionales').then(response => response.json()).then(datos => {
             console.log(datos)
             setData(datos.data)
         });
