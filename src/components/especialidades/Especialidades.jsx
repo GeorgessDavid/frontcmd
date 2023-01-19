@@ -16,7 +16,7 @@ const Especialidades = () => {
 
         <div className="ventana">
             <h3>Cantidad de especialidades ofrecidas</h3>
-            <p>{data.total}</p>
+            <p>{data.length}</p>
         </div>
     );
 
