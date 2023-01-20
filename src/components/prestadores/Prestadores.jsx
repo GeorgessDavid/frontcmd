@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react';
+import './Prestadores.css'
 
 const Prestadores = () => {
 
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3005/apiUsuarios/profesionales').then(response => response.json()).then(datos => {
+        fetch('https://dh-grupo3.onrender.com/apiUsuarios/profesionales').then(response => response.json()).then(datos => {
             console.log(datos)
             setData(datos.data)
         });
@@ -14,8 +15,8 @@ const Prestadores = () => {
 
     return (
 
-        <div className="ventana">
-            <h3>Cantidad de prestadores registrados</h3>
+        <div className="PrestadorBox">
+            <h3>Cantidad de profesionales registrados</h3>
             <p>{data.length}</p>
         </div>
     );
