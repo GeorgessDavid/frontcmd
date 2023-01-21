@@ -1,0 +1,15 @@
+.PrestadorBox{
+    background-color: rgb(242, 249, 255);
+    border: rgb(185, 185, 185) 1px solid;
+    border-radius: 10px;
+    border-left: 5px rgb(243, 116, 43) solid;
+    border-bottom: 2px rgb(185, 185, 185) solid;
+    max-width: 100%;
+    padding: 0 10px;
+    margin: 10px 0;
+    transition: all 300ms;
+}
+
+.PrestadorBox:hover{
+    box-shadow: 0 0 10px black;
+}

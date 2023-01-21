@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import './Prestadores.css'
 
 const Prestadores = () => {
 
@@ -14,8 +15,8 @@ const Prestadores = () => {
 
     return (
 
-        <div className="ventana">
-            <h3>Cantidad de prestadores registrados</h3>
+        <div className="PrestadorBox">
+            <h3>Cantidad de profesionales registrados</h3>
             <p>{data.length}</p>
         </div>
     );

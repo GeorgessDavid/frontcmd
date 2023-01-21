@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import './Pacientes.css'
 
 const Pacientes = () => {
 
@@ -14,7 +15,7 @@ const Pacientes = () => {
 
     return (
 
-        <div className="ventana">
+        <div className="box">
             <h3>Cantidad de pacientes registrados</h3>
             <p>{data.length}</p>
         </div>

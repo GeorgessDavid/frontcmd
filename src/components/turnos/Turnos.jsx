@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-
+import './Turnos.css'
 const Turnos = () => {
 
     const [data, setData] = useState([]);
@@ -14,7 +14,7 @@ const Turnos = () => {
 
     return (
 
-        <div className="ventana">
+        <div className="TurnosBox">
             <h3>Cantidad de Turnos tomados</h3>
             <p>{data.length}</p>
         </div>

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import './Especialidades.css'
 
 const Especialidades = () => {
 
@@ -14,7 +15,7 @@ const Especialidades = () => {
 
     return (
 
-        <div className="ventana">
+        <div className="EspecialidadesBox">
             <h3>Cantidad de especialidades ofrecidas</h3>
             <p>{data.length}</p>
         </div>
