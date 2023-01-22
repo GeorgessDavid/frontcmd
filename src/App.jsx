@@ -4,6 +4,7 @@ import Turnos from "./components/turnos/Turnos.jsx";
 import Pacientes from "./components/pacientes/Pacientes.jsx";
 import Prestadores from "./components/prestadores/Prestadores";
 import Navbar from './components/navbar/Navbar';
+import PracticasMedicas from './components/practicas-medicas/PracticasMedicas'
 
 function App() {
     return (
@@ -16,6 +17,9 @@ function App() {
                     <Especialidades />
                 </div>
                 <div>
+                    <PracticasMedicas />
+                </div>
+                <div>
                     <Turnos />
                 </div>
                 <div>
@@ -24,6 +28,7 @@ function App() {
                 <div>
                     <Prestadores />
                 </div>
+                
             </div>
         </div>
     );

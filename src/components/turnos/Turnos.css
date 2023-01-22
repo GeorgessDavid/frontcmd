@@ -1,7 +1,7 @@
 .TurnosBox{
     background-color: rgb(242, 249, 255);
     border: rgb(185, 185, 185) 1px solid;
-    border-radius: 10px;
+    border-radius: 3px;
     border-left: 5px rgb(140, 253, 2) solid;
     border-bottom: 2px rgb(185, 185, 185) solid;
     max-width: 100%;
@@ -12,4 +12,9 @@
 
 .TurnosBox:hover{
     box-shadow: 0 0 10px black;
+}
+
+.TurnosBox h3{
+    text-transform: uppercase;
+    color: rgb(111, 202, 0)
 }
