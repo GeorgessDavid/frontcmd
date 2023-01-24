@@ -7,7 +7,7 @@ const Turnos = () => {
     useEffect(() => {
             fetch('https://dh-grupo3.onrender.com/turnos/api/listar').then(response => response.json()).then(datos => {
                 console.log(datos)
-                setData(datos)
+                setData(datos.total)
             });
         }
         , []);
@@ -16,7 +16,7 @@ const Turnos = () => {
 
         <div className="TurnosBox">
             <h3>Cantidad de Turnos tomados</h3>
-            <p>{data.length}</p>
+            <p>{data}</p>
         </div>
     );
 
