@@ -6,7 +6,7 @@ const PracticasMedicas = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('https://dh-grupo3.onrender.com/tratamientos/api').then(response => response.json()).then(datos => {
+        fetch('https://cmedicosdavid.onrender.com/tratamientos/api').then(response => response.json()).then(datos => {
             console.log(datos)
             setData(datos.data)
         });

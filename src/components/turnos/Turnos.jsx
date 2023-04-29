@@ -5,7 +5,7 @@ const Turnos = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-            fetch('https://dh-grupo3.onrender.com/turnos/api/listar').then(response => response.json()).then(datos => {
+            fetch('https://cmedicosdavid.onrender.com/turnos/api/listar').then(response => response.json()).then(datos => {
                 console.log(datos)
                 setData(datos.total)
             });
